@@ -10,9 +10,11 @@ def game():
         num_2 = int(input('Enter second number: '))
         answer = int(input('Enter you answer: '))
         if operation == 1:
-            result = add(num_1, num_2)
+            result = add(num_1,num_2)
         elif operation == 2:
             result = sub(num_1,num_2)
+        elif operation == 3:
+            result = mul(num_1,num_2)
         if result == answer:
             score += 1
             print('Correct!!')
